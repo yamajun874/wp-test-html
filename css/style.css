@@ -1,0 +1,246 @@
+.background-image {
+  background: whitesmoke;
+}
+
+
+.header-logo img{
+  margin: 0 auto;
+  padding: 20px 0 20px 0;
+  display: block;
+}
+
+.header-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  /* background: hotpink; */
+}
+
+.header-item {
+  list-style: none;
+  font-size: 20px;
+  color: rgb(165, 153, 153);
+  text-decoration: none;
+}
+
+.header-item:not(:last-child){
+  margin-right: 40px;
+}
+
+.first-view {
+  background: url("../img/media__firstview.png");
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+  position: relative;
+  margin: 20px 0;
+}
+
+.first-view__ttl {
+  font-family: 'Indie Flower', cursive;
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 65px;
+  line-height: 80px;
+  text-align: center;
+  width: 100%;
+}
+
+.content {
+  /* width: 90%; */
+  margin: 50px 50px 0 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.post {
+  width: 65%;
+}
+
+.post-ttl {
+  color: rgb(165, 153, 153);
+  font-size: 20px ;
+  line-height: 25px;
+}
+
+.post-ttl--logo {
+  color: deeppink;
+  font-size: 18px;
+  display: block;
+  font-family: 'Indie Flower', cursive;
+}
+
+.post-card a {
+  text-decoration: none;
+}
+
+.post-card-wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.post-card {
+  width: 30%;
+  margin-bottom: 30px;
+}
+
+
+
+.post-card__pics img {
+  width: 100%;
+  border-radius: 15px 15px 0 0;
+}
+
+.card-category {
+  position: absolute;
+  color: white;
+  background: deeppink;
+  width: 80px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px 0 0 0;
+}
+
+.post-card__comment {
+  color: rgb(165, 153, 153);
+  background: white;
+  max-height: 100px;
+  padding: 10px 10px 50px 10px;
+  position: relative;
+  border-radius: 0 0 15px 15px;
+}
+
+.post-card__message {
+  line-height: 25px;
+}
+
+.post-card__data {
+  position: absolute;
+  bottom: 0;
+  font-size: 12px;
+  padding-bottom: 10px;
+}
+
+.sidebar {
+  width: 30%;
+  margin: 50px 0 50px 0;
+}
+
+.sidebar-img  {
+  width: 100%;
+  border-radius: 15px;
+}
+
+.introduction {
+  background: white;
+  margin: 20px 0 20px 0;
+  border-radius: 15px;
+  min-height: 300px;
+}
+
+.introduction-logo {
+  min-height: 200px;
+  position: relative;
+}
+
+.introduction-logo img {
+  background: deeppink;
+  border-radius: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 60px 0 60px 0;
+  width: 50%;
+}
+
+.introduction-ttl {
+  font-size: 20px;
+  text-align: center;
+  color: rgb(165, 153, 153);
+  margin: 10px 0 20px 0;
+}
+
+.introduction-profile {
+  color: rgb(165, 153, 153);
+  padding: 0 15px 15px 15px;
+  line-height: 25px;
+  font-size: 14px;
+}
+
+.category {
+  background: white;
+  color: rgb(165, 153, 153);
+  padding: 30px 15px 30px 15px;
+  border-radius: 15px;
+}
+
+.category-ttl {
+  font-size: 25px;
+  padding: 0 20px 30px 20px;
+}
+
+.category-table {
+  font-size: 20px;
+  width: 100%;
+}
+
+.category-table td {
+  border-bottom: 1px solid whitesmoke;
+  padding: 15px 0 15px 15px;
+  /* display: block; */
+}
+
+.category-table td a::after {
+  content: '';
+  background: url("../img/arrow.svg") no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 30px;
+  height: 30px;
+}
+
+.category-table td a {
+  text-decoration: none;
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  color: rgb(165, 153, 153);
+}
+
+footer {
+  color: rgb(165, 153, 153);
+  height: 60px;
+  position: relative;
+}
+
+footer small {
+  width: 100%;
+  text-align: center;
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 15px;
+}
+
+/* first-view, footer, sidebarのprifileをレスポンシブ */
+
+@media screen and (max-width:760px){
+  .introduction-logo img {
+  width: 80%;
+}
+
+}
